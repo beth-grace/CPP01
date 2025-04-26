@@ -1,7 +1,7 @@
 CC = CC
 FLAGS = -Wall -Werror -Wextra -std=c++98
-NAME = megaphone
-SOURCES = megaphone.cpp
+NAME = Zombie
+SOURCES = Zombie.cpp zombieHorde.cpp main.cpp\
 
 OBJECTS = $(SOURCES:%.cpp=%.o)
 

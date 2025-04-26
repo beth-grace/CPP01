@@ -1,7 +1,7 @@
 CC = CC
 FLAGS = -Wall -Werror -Wextra -std=c++98
 NAME = Zombie
-SOURCES = Zombie.cpp randomChump.cpp newZombie.cpp\
+SOURCES = Zombie.cpp randomChump.cpp newZombie.cpp main.cpp\
 
 OBJECTS = $(SOURCES:%.cpp=%.o)
 
