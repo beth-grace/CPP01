@@ -11,7 +11,7 @@ class HumanB
         Weapon *_weapon;
         bool _is_armed;
     public:
-        HumanB(std::string name);
+        HumanB(const std::string name);
        ~HumanB(void);
 
        void setWeapon(Weapon &weapon);

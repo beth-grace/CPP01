@@ -7,7 +7,7 @@ Zombie *zombieHorde(int N, std::string name)
         std::cout << "NAURRR HORDE CAN'T BE LESS THAN ONE CLEO" << std::endl;
         return (NULL);
     }
-    Zombie *horde = Zombie[N];
+    Zombie *horde = new Zombie[N];
     if(horde == NULL)
     {
         std::cout << "BOOHOO NO HORDE FOR YOU, HORDE FAILED!" << std::endl;
