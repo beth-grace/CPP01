@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <cstdlib>
-#include <cstdio>
 
 int main(int argc, char **argv)
 {
@@ -23,7 +21,7 @@ int main(int argc, char **argv)
         return (1);
     }
 
-    if (!file.is_open())
+    if (!file.good())
     {
         std::cout <<"error: file closed." << std::endl;
         file.close();
@@ -32,9 +30,9 @@ int main(int argc, char **argv)
 
     std::ofstream newFile((std::string(argv[1]).append(".replace")).c_str());
 
-    if (!newFile.is_open())
+    if (!newFile.good())
     {
-        std::cout <<"error: output file failed on opening." << std::endl;
+        std::cout <<"error: output file failed." << std::endl;
         file.close();
         return (1);
     }
