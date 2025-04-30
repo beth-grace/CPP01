@@ -1,7 +1,7 @@
 CC = CC
 FLAGS = -Wall -Werror -Wextra -std=c++98
-NAME = megaphone
-SOURCES = megaphone.cpp
+NAME = replace
+SOURCES = main.cpp\
 
 OBJECTS = $(SOURCES:%.cpp=%.o)
 
